@@ -42,6 +42,38 @@ hg branches -c|--closed
 hg commit --close-branch
 ```
 
+### Create a branch
+
+```bash
+hg branch <branch-name>
+```
+
+### Push new branch to remote
+
+```bash
+hg push -b <branch-name> --new-branch
+```
+
+### Check logs
+
+all logs from all branches
+
+```bash
+hg log
+```
+
+logs for a specified branch
+
+```bash
+hg log -b <branch-name>
+```
+
+limit number of logs to be displayed
+
+```bash
+hg log -b <branch-name> -l <a-number>
+```
+
 ### Do stuff in a sub repo
 
 ```bash
