@@ -19,13 +19,36 @@ update to a specific revision
 hg update -r|--rev <revision>
 ```
 
-### do stuff in a sub repo
+### Show branch name
+
+current branch name
+
+```bash
+hg branch
+```
+
+list all branches
+
+```bash
+hg branches
+
+# show closed branches too
+hg branches -c|--closed
+```
+
+### Close a branch
+
+```bash
+hg commit --close-branch
+```
+
+### Do stuff in a sub repo
 
 ```bash
 hg -R <subrepo> <commands>
 ```
 
-### check identity the working directory or specified revision
+### Check identity the working directory or specified revision
 
 current directory with current revision
 
