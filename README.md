@@ -46,3 +46,11 @@ a subrepo directory with current revision
 ```bash
 hg -R <subrepo> id
 ```
+
+get a complete id that is stored in .hgsubstate
+
+```bash
+hg --debug id
+
+# output: d5ab68e45277f9134562a780a2d0ccc3e07e15ac (Wanaka_EU_Common)
+```
