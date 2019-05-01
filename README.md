@@ -54,6 +54,19 @@ hg branch <branch-name>
 hg push -b <branch-name> --new-branch
 ```
 
+### revert changesets without removing commits
+
+```bash
+hg revert --all -r <parent of rev-to-revert>
+```
+
+### revert by creating a new head
+
+```bash
+hg update -r <rev-to-revert>
+# this is similar to git checkout <commit-hash>
+```
+
 ### Check logs
 
 all logs from all branches
